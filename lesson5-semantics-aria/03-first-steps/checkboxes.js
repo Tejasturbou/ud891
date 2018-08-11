@@ -50,5 +50,15 @@
   var checkboxes = slice(document.querySelectorAll('.checkbox'));
   for (var checkbox of checkboxes)
     checkbox.logic = new Checkbox(checkbox);
+  
+//   jquery
+  
+  $('.checkbox').click(function)({
+    if (this.attr('aria-checked') === true){
+      this.attr('aria-checked', 'false');
+    } else if (this.attr('aria-checked') === false) {
+      this.attr('aria-checked', 'true');
+    }
+  });
 
 }());
